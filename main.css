@@ -1,0 +1,47 @@
+.nav {
+    background-color: #00CC29;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.main {
+    padding-left: 3%;
+}
+body {
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+button {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 0%;
+    margin-left: 0%;
+    background: none;
+    border: none;
+}
+a {
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+a, p {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+button:hover {
+    background-color: 3D8F4E
+}
+a.extension {
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
