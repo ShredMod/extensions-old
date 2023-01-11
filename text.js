@@ -602,3 +602,21 @@ class Scratch3TextBlocks{
     
     
 }
+
+(function () {
+    var extensionClass = Scratch3TextBlocks;
+    if (typeof window === "undefined" || !window.vm) {
+      console.error("GameUtils is not supported in this environment.");
+    } else {
+      var extensionInstance = new extensionClass(
+        window.vm.extensionManager.runtime
+      );
+      var serviceName =
+        window.vm.extensionManager._registerInternalExtension(extensionInstance);
+      window.vm.extensionManager._loadedExtensions.set(
+        extensionInstance.getInfo().id,
+        serviceName
+      );
+      console.log("GameUtils has loaded.");
+    }
+  })();
